@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
    let colors = ["#e1fac1", "#a7f5e8", "#1E90FF", "#9EB7F7", "#32CD32"];
     let colorIndex = 0; 
 
-    // Button click background color
+    // Button click background color change
     colorChangeBtn.addEventListener("click", function () {
       // Change the background color
       document.body.style.backgroundColor = colors[colorIndex];
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                // Disable button
                this.disabled = true;
-               this.classList.add("btn-disabled", "bg-gray-400", "text-white");
+               this.classList.add("btn-disabled", "bg-gray-300", "text-white");
                this.textContent = "Completed";
 
                completedCount++;
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
        });
    });
 
-   // Clear History 
+   // Clear history 
    clearHistoryBtn.addEventListener("click", function () {
        taskLog.innerHTML = ""; 
        navbarCount.textContent = "0"; 

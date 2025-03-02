@@ -21,7 +21,7 @@
 
     <header class="py-5 ">
         <!----- navbar section ----->
-        <nav class="bg-white rounded-lg mx-7 py-4 ">
+        <nav class="bg-white rounded-lg mx-7 py-4 shadow-md ">
             <div class="flex justify-between mx-4">
 
                 <div class="flex">
@@ -29,9 +29,11 @@
                     <span class="text-2xl">Dev</span><span class="font-bold text-2xl">Board</span>
                 </div>
 
+                <a href="index.html">
                 <div>
                     <button class="bg-blue-600 px-2 py-2 rounded-lg text-white">Back to Desk</button>
                 </div>
+              </a>
             </div>
         </nav>
     </header>
@@ -43,7 +45,10 @@
         <section class="mt-5 mx-5 space-y-8 mb-4">
         <div class="collapse bg-white">
             <input type="radio" name="my-accordion-1" checked="checked" />
-            <div class="collapse-title text-xl font-medium">Question-1: What are the different ways to select an element in the DOM?</div>
+            <div class="collapse-title text-xl font-medium">Question-1: What are the different ways to select an element in the DOM?
+              <hr style="border:1px dashed rgb(241, 241, 241) ;" class="mt-4">
+            </div>
+            
             <div class="collapse-content ">
               <p>There are several ways to select an element in the DOM.<br>
                 1. getElementById(): Selects an element by its id.<br>
@@ -57,7 +62,9 @@
           </div>
           <div class="collapse bg-white">
             <input type="radio" name="my-accordion-1" />
-            <div class="collapse-title text-xl font-medium">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
+            <div class="collapse-title text-xl font-medium">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+              <hr style="border:1px dashed rgb(241, 241, 241) ;" class="mt-4">
+            </div>
             <div class="collapse-content">
               <p>innerHTML: Gets or sets HTML content (including tags).<br>
                 innerText: Gets or sets visible text, considering styles.<br>
@@ -67,7 +74,9 @@
 
           <div class="collapse bg-white">
             <input type="radio" name="my-accordion-1" />
-            <div class="collapse-title text-xl font-medium">Question-3: What is event delegation in the DOM?</div>
+            <div class="collapse-title text-xl font-medium">Question-3: What is event delegation in the DOM?
+              <hr style="border:1px dashed rgb(241, 241, 241) ;" class="mt-4">
+            </div>
             <div class="collapse-content">
               <p>Event delegation is when you attach an event listener to a parent element, instead of each child. It helps manage events more easily, especially for new elements added later. The event then bubbles up to the parent where it’s handled.</p>
             </div>
@@ -75,7 +84,9 @@
 
           <div class="collapse bg-white">
             <input type="radio" name="my-accordion-1" />
-            <div class="collapse-title text-xl font-medium">Question-4: What is event bubbling in the DOM?</div>
+            <div class="collapse-title text-xl font-medium">Question-4: What is event bubbling in the DOM?
+              <hr style="border:1px dashed rgb(241, 241, 241) ;" class="mt-4">
+            </div>
             <div class="collapse-content">
               <p>Event bubbling is when an event starts from the target element and "bubbles up" to its parent elements, one by one, until it reaches the root. This means that if you click on an element, the event will also be triggered on its parent, grandparent, and so on, unless it's stopped.</p>
             </div>
@@ -83,7 +94,7 @@
 
           <div class="collapse bg-white">
             <input type="radio" name="my-accordion-1" />
-            <div class="collapse-title text-xl font-medium">Question-5: How do you create, add, and remove elements using JavaScript?</div>
+            <div class="collapse-title text-xl font-medium">Question-5: How do you create, add, and remove elements using JavaScript? <hr style="border:1px dashed rgb(241, 241, 241) ;" class="mt-4"></div>
             <div class="collapse-content">
               <p>To create, add, and remove elements using JavaScript, first use document.createElement() to create a new element. For example, const newElement = document.createElement("div") creates a new div element. To add this element to the page, you use appendChild() or insertBefore() on the parent element, like parentElement.appendChild(newElement) to append it to a parent. To remove an element, you use removeChild() on its parent, such as parentElement.removeChild(elementToRemove) to remove an element from the DOM. </p>
             </div>
