@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+    body{
+        font-family: "Poppins", sans-serif;
+    }
+</script>
+</head>
+<body class="bg-blue-50 min-h-screen ">
+
+    <header class="py-5 ">
+        <!----- navbar section ----->
+        <nav class="bg-white rounded-lg mx-7 py-4 ">
+            <div class="flex justify-between mx-4">
+
+                <div class="flex">
+                    <img class="size-9 mx-2" src="assets/logo.png">
+                    <span class="text-2xl">Dev</span><span class="font-bold text-2xl">Board</span>
+                </div>
+
+                <div>
+                    <button class="bg-blue-600 px-2 py-2 rounded-lg text-white">Back to Desk</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="text-3xl font-bold text-center">Blogs</h1>
+
+        <!--- question and answer ---->
+
+        <section class="mt-5 mx-5 space-y-8 mb-4">
+        <div class="collapse bg-white">
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title text-xl font-medium">Question-1: What are the different ways to select an element in the DOM?</div>
+            <div class="collapse-content ">
+              <p>There are several ways to select an element in the DOM.<br>
+                1. getElementById(): Selects an element by its id.<br>
+                2. getElementsByClassName(): Selects elements by class name.<br>
+                3. getElementsByTagName(): Selects elements by tag name.<br>
+                4. querySelector(): Selects the first matching element.<br>
+                5. querySelectorAll(): Selects all matching elements.<br>
+                6. childNodes: Selects all child nodes of an element.<br>
+                7. parentNode: Selects the parent element of a given element.</p><br>
+            </div>
+          </div>
+          <div class="collapse bg-white">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title text-xl font-medium">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
+            <div class="collapse-content">
+              <p>innerHTML: Gets or sets HTML content (including tags).<br>
+                innerText: Gets or sets visible text, considering styles.<br>
+                textContent: Gets or sets all text, ignoring styles and tags.<br></p>
+            </div>
+          </div>
+
+          <div class="collapse bg-white">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title text-xl font-medium">Question-3: What is event delegation in the DOM?</div>
+            <div class="collapse-content">
+              <p>Event delegation is when you attach an event listener to a parent element, instead of each child. It helps manage events more easily, especially for new elements added later. The event then bubbles up to the parent where it’s handled.</p>
+            </div>
+          </div>
+
+          <div class="collapse bg-white">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title text-xl font-medium">Question-4: What is event bubbling in the DOM?</div>
+            <div class="collapse-content">
+              <p>Event bubbling is when an event starts from the target element and "bubbles up" to its parent elements, one by one, until it reaches the root. This means that if you click on an element, the event will also be triggered on its parent, grandparent, and so on, unless it's stopped.</p>
+            </div>
+          </div>
+
+          <div class="collapse bg-white">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title text-xl font-medium">Question-5: How do you create, add, and remove elements using JavaScript?</div>
+            <div class="collapse-content">
+              <p>To create, add, and remove elements using JavaScript, first use document.createElement() to create a new element. For example, const newElement = document.createElement("div") creates a new div element. To add this element to the page, you use appendChild() or insertBefore() on the parent element, like parentElement.appendChild(newElement) to append it to a parent. To remove an element, you use removeChild() on its parent, such as parentElement.removeChild(elementToRemove) to remove an element from the DOM. </p>
+            </div>
+          </div>
+        </section>
+    
+    </main>
+    
+</body>
+</html>
