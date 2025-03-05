@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                //  new message with time
                let messageBox = document.createElement("div");
-               messageBox.classList.add("bg-blue-50", "p-3", "rounded", "shadow", "text-sm");
+               messageBox.classList.add("bg-green-100", "p-3", "rounded", "shadow", "text-sm");
                messageBox.textContent = `${taskMessage} - at ${currentTime}`;
                taskLog.appendChild(messageBox);
 
